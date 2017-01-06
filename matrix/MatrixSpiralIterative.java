@@ -1,12 +1,12 @@
 public class MatrixSpiralIterative
 {
 
-  publis static void printSprial(int[][] inputMatrix)
+  public static void printSprial(int[][] inputMatrix)
   {
       int rowCount=0;
-      int rowLength=inputMatrix.length()-1;
+      int rowLength=inputMatrix.length-1;
       int columnCount=0;
-      int columnLength=inputMatrix[0].length()-1;
+      int columnLength=inputMatrix[0].length-1;
 
       while(rowCount<=rowLength && columnCount<=columnLength)
       {
@@ -16,7 +16,7 @@ public class MatrixSpiralIterative
           System.out.print(" "+inputMatrix[rowCount][p]);
         }
 
-        for(int q=rowcount+1;q<=rowLength;q++)
+        for(int q=rowCount+1;q<=rowLength;q++)
         {
           System.out.print(" "+inputMatrix[q][columnLength]);
         }
@@ -46,7 +46,7 @@ public class MatrixSpiralIterative
       {11,12,13,14,15},
       {16,17,18,19,20},
       {21,22,23,24,25}
-      }
+      };
 
       MatrixSpiralIterative.printSprial(inputMatrix);
   }
