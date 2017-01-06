@@ -1,4 +1,4 @@
-class MatrixSpiralIterative
+public class MatrixSpiralIterative
 {
 
   publis static void printSprial(int[][] inputMatrix)
